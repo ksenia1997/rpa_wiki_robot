@@ -1,11 +1,8 @@
 # Robotic Researcher
-Welcome to Quandri's technical assignment. This assignment is meant to simulate the work
-you would do working at Quandri building software robots. 
-
-## Your task
 The purpose of this software robot is to find key information about important scientists
 and display it to the user.
 
+rpaframework is used to complete this task. Documentation for the provided library can be found [here](https://rpaframework.org/#)
 When this robot is run, it should:
 
 1. Introduce itself and explain the steps it's about to take.
@@ -14,21 +11,15 @@ When this robot is run, it should:
     retrieve the first paragraph of their wikipedia page.
 4. Display all of this information to the user in an easily understood manner. 
 
-## A few things to keep in mind
-- This should be written as production level code. i.e. You would expect this code to
-    pass a PR to get merged into main.
-- As this is a software robot, it should not make use of any wikipedia API but it should 
-    instead open a browser and navigate to wikipedia in the same manner a human would.
-- The provided code can be added to, removed and changed as you see fit.
-- Please use rpaframework to complete this task. Documentation for the provided 
-    library can be found [here](https://rpaframework.org/#)
+## Run the project: 
+```commandline
+pip install -r requirements.txt 
+python main.py
+```
 
-## Bonus
-What other nifty features can you add to your robot? This is not required but is an
-opportunity for you to have fun with your code and show your creativity.
+## Project structure: 
 
-
-## Submission
-When you've completed the task, please email your project in a zip folder to 
-jamieson@quandri.io with the subject line: `Robotic Researcher - Quandri Backend Python 
-Interview`
+main.py runs the Robotic Researcher. <br />
+robotics.py contains Robot implementation <br />
+settings/static.py contains static constants  <br />
+settings/types.py contains dataclass Scientist, which holds the necessary information, which should be displayed. 
